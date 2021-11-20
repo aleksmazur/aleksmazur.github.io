@@ -1,0 +1,79 @@
+.skills {
+    padding-top: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    h2 {
+        margin-top: 6px;
+        text-align: center;
+    }
+    &__wrapper {
+        display: grid;
+        padding: 85px 10px 120px 10px;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        grid-auto-rows: auto;
+        gap: 13px;
+    }
+    &__item {
+        padding: 10px 30px 25px 30px;
+        width: 270px;
+        height: 270px;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        &-img {
+            height: 105px;
+            display: flex;
+            align-items: center;
+
+        }
+        h4 {
+            margin-bottom: 0;
+        }
+    }
+    &__text {
+        margin-top: 15px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    &__progress {
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        gap: 30px 45px;
+        &-item {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            h4 {
+                margin-bottom: 32px;
+                position: relative;
+                padding: 2px 0 0 14px;
+                @include before_circle;
+            }
+        }
+        &-per {
+            position: absolute;
+            right: 0px;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &-scale {
+            width: 350px;
+            height: 14px;
+            border-radius: 4px;
+            background: #E8E4DE;
+            span {
+                display: block;
+                height: 100%;
+                background: $main-color;
+            }
+        }
+    }
+}

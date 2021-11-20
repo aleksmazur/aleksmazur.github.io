@@ -1,0 +1,31 @@
+.policy {
+    margin-top: 20px;
+    .container {
+        border: solid 2px #eee;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    h2 {
+        font-size: 20px;
+        margin-bottom: 24px;
+        font-weight: 400;
+    }
+    ol {
+        list-style: none;
+        margin-bottom: 24px;
+        padding-left: 40px;
+    }
+    &__descr {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 24px;
+    }
+    li {
+        font-size: 16px;
+        line-height: 2;
+    }
+    
+}
